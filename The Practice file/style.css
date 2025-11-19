@@ -1,0 +1,292 @@
+
+
+body{
+    margin: 0px;
+    padding: 0px;
+    /* overflow-x: hidden; */
+      font-family: "Momo Signature", cursive;
+  font-weight: 400;
+  font-style: normal;
+   
+ 
+}
+.nav{
+    /* display: flex; */
+    /* position: sticky;     ye hai */
+    /* top: 0;               ye hai */
+    /* z-index: 1000;        ye hai */
+    /* background: white;           bahut zaroori hai warna content upar se dikhega */
+    /* justify-content: space-between; */
+    /* flex-wrap: wrap; */
+    /* padding: 15px 30px; */
+    height: 13vh;
+    background: #ffffff;
+    width: 100%;           
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    align-items: center;
+    display: flex;
+    border-bottom: 5px solid rgb(255, 255, 255);
+
+}
+.main{
+/* overflow: visible ;    */
+min-height: 100vh;
+/* height: 100vh; */
+
+ 
+    
+
+}
+
+
+.nav_part1 img{
+    height: 8vh;
+    margin: 1vw  7.1vh;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5.0px 6.0px 2.0px 6.0px;
+    background-color: rgba(8, 1, 1, 0.144);
+    
+}
+
+.nav_part2{
+    margin-left:35vw;
+    margin-top: 4vh;
+    align-items: center;
+    padding-bottom: 4vh;
+ 
+}
+.nav_part3{
+  
+    padding-bottom: 3vh;
+ 
+}
+.nav_part2 a{
+    color: rgb(150, 144, 144);
+   text-decoration: none;
+   padding-left: 2vw;
+  font-size: 1.5vw;
+ 
+}
+.nav_part2 a:hover{
+ color: rgb(0, 0, 0);
+ text-decoration: underline;
+   
+}
+
+
+.nav_part3{
+   margin-top: 3.0vh;
+   margin-left: 2vw;
+}
+
+.section{
+    width: 100%;
+    height: 80vh;
+     padding-left: 10vw;
+    padding-right: 10vw;
+}
+.section img{
+   width: 80%;
+    height: 80vh;
+  
+
+
+   
+}
+
+
+.section_1{
+    margin-top: 0vh;
+}
+.card{
+    margin: 3vw;
+    border: 1px solid black;
+    
+}
+.card :hover{
+   background-color: rgb(221, 218, 218);
+  
+}
+.card-title{
+    margin-left: 7vw;
+}
+.card img{
+    height: 15vw;
+}
+
+.section h1{
+    position: absolute;
+    z-index: 9999;
+    top: 35vh;
+    left: 35vw;
+    color: #ffffff;
+}
+/* ←← Sirf ye CSS daal do style.css mein →→ */
+
+.carousel-item h1 {
+    position: absolute;
+    bottom: 100px;
+    left: 50%;
+    transform: translateX(-50%);
+    /* background: rgba(0, 0, 0, 0.6); */
+    color: white;
+    padding: 15px 30px;
+    border-radius: 10px;
+    font-family: 'Courier New', monospace, sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    white-space: nowrap;
+    overflow: hidden;
+    /* border-right: 5px solid orange; */
+    width: 0;
+    animation: 
+        typing 3.5s steps(40) forwards,
+        blink 0.8s step-end infinite;
+}
+
+/* Har slide ke h1 ko alag-alag time pe animation shuru karo */
+.carousel-item:nth-child(1) h1 { animation-delay: 0.5s; }
+.carousel-item:nth-child(2) h1 { animation-delay: 0.1s; }
+.carousel-item:nth-child(3) h1 { animation-delay: 0.5s; }
+
+/* Typing Animation */
+@keyframes typing {
+    from { width: 0; }
+    to   { width:60%; }
+}
+
+/* Blinking Cursor */
+/* @keyframes blink {
+    50% { border-color: transparent; }
+} */
+
+/* Mobile ke liye chhota kar do */
+
+
+
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Poppins', sans-serif;
+      background: #f8f9fa;
+    }
+
+    /* Navbar */
+    .navbar {
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      height: 80px;
+    }
+    .navbar-brand img {
+      height: 55px;
+      border: 3px solid #333;
+      border-radius: 50%;
+      padding: 5px;
+      background: rgba(0,0,0,0.1);
+    }
+
+    /* Carousel */
+    .carousel-section {
+      position: relative;
+    }
+    .carousel-item img {
+      height: 90vh;
+      object-fit: cover;
+      width: 100%;
+    }
+
+    /* Typing Effect Text */
+    .carousel-caption h1 {
+      position: absolute;
+      bottom: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      color: white;
+      padding: 15px 40px;
+      border-radius: 12px;
+      font-family: 'Courier New', Courier, monospace;
+      font-weight: bold;
+      font-size: clamp(2rem, 5vw, 4.5rem); /* Responsive font */
+      white-space: nowrap;
+      overflow: hidden;
+      width: 0;
+      animation: typing 3.5s steps(40) forwards;
+    }
+
+    @keyframes typing {
+      from { width: 0; }
+      to   { width: 80%; }
+    }
+
+    /* Different delay for each slide */
+    .carousel-item:nth-child(1) .carousel-caption h1 { animation-delay: 0.8s; }
+    .carousel-item:nth-child(2) .carousel-caption h1 { animation-delay: 0.8s; }
+    .carousel-item:nth-child(3) .carousel-caption h1 { animation-delay: 0.8s; }
+
+    /* Optional blinking cursor */
+    /* .carousel-caption h1::after {
+      content: '|';
+      animation: blink 0.8s step-end infinite;
+    }
+    @keyframes blink {
+      50% { opacity: 0; }
+    } */
+
+    /* Cards Section */
+    .card-section {
+      padding: 60px 20px;
+      background: #fff;
+    }
+    .course-card {
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: none;
+      border-radius: 15px;
+      overflow: hidden;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    .course-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 20px 30px rgba(0,0,0,0.2);
+    }
+    .course-card img {
+      height: 250px;
+      object-fit: cover;
+    }
+    .course-card .card-body {
+      text-align: center;
+      padding: 25px;
+    }
+    .course-card h5 {
+      font-size: 1.5rem;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+
+    /* Mobile Fixes */
+    @media (max-width: 768px) {
+      .navbar {
+        height: auto;
+        padding: 10px 0;
+      }
+      .carousel-item img {
+        height: 70vh;
+      }
+      .carousel-caption h1 {
+        bottom: 60px;
+        padding: 10px 20px;
+      }
+      .card-section {
+        padding: 40px 15px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .carousel-caption h1 {
+        font-size: 1.8rem;
+        bottom: 40px;
+      }
+    }
+  
